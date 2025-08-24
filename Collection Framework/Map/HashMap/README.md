@@ -171,22 +171,34 @@ public class HashMapNullExample {
 
 ## Comparison: HashMap vs Hashtable vs LinkedHashMap vs TreeMap
 
-  ----------------------------------------------------------------------------
-  Feature        HashMap      LinkedHashMap        TreeMap      Hashtable
-  -------------- ------------ -------------------- ------------ --------------
-  **Ordering**   No           Insertion order      Sorted order No
-                                                   (keys)       
+  ## 📊 Comparison of Java Map Implementations
 
-  **Null Key**   1 allowed    1 allowed            Not allowed  Not allowed
+| **Feature**       | **HashMap**        | **LinkedHashMap**       | **TreeMap**            | **Hashtable**         |
+|-------------------|--------------------|--------------------------|------------------------|------------------------|
+| **Ordering**      | ❌ No ordering     | ✅ Insertion order       | ✅ Sorted by keys      | ❌ No ordering         |
+| **Null Keys**     | ✅ One allowed     | ✅ One allowed           | ❌ Not allowed         | ❌ Not allowed         |
+| **Null Values**   | ✅ Multiple allowed| ✅ Multiple allowed      | ✅ Multiple allowed    | ❌ Not allowed         |
+| **Thread Safety** | ❌ Not thread-safe | ❌ Not thread-safe       | ❌ Not thread-safe     | ✅ Thread-safe         |
 
-  **Null         Multiple     Multiple allowed     Multiple     Not allowed
-  Values**       allowed                           allowed      
+---
 
-  **Thread       No           No                   No           Yes
-  Safe**                                                        
-  ----------------------------------------------------------------------------
+### 🧠 Notes
 
-------------------------------------------------------------------------
+- **TreeMap** uses natural ordering or a custom comparator for sorting keys.
+- **Hashtable** is synchronized but considered legacy; prefer `ConcurrentHashMap` for modern thread-safe usage.
+- **HashMap** and **LinkedHashMap** are ideal for non-threaded environments with flexible null handling.
+- **LinkedHashMap** is great when predictable iteration order is needed.
+
+---
+
+### ✅ Summary
+
+- Use **HashMap** for fast, unordered access.
+- Use **LinkedHashMap** when insertion order matters.
+- Use **TreeMap** when sorted key access is required.
+- Use **Hashtable** only if legacy thread safety is essential.
+
+
 
 ## Conclusion
 
