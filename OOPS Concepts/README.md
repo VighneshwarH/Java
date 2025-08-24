@@ -179,5 +179,3 @@ Mastering these concepts is essential for strong Java programming skills.
 
 ---
 
-📄 **Author:** *Your Name*  
-📌 **Topic:** OOPS in Java

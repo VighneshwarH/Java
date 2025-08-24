@@ -89,5 +89,4 @@ It is the **simplest form of inheritance**, forming the foundation for more adva
 
 ---
 
-📄 **Author:** *Your Name*  
-📌 **Topic:** Single-Level Inheritance in Java
+
