@@ -1,8 +1,8 @@
-# 🚗🛵 Understanding Inheritance in Java (Vehicle Example)
+# 🚗🛵 Understanding Hierarchical Inheritance in Java (Vehicle Example)
 
 ## 📌 Introduction
-**Inheritance** is one of the four fundamental OOP (Object-Oriented Programming) principles in Java.  
-It allows a class (child/subclass) to **inherit properties and behaviors** (fields and methods) from another class (parent/superclass).  
+In **Hierarchical Inheritance**, one single parent class will have multiple subclasses at same level.
+It is one of the important types in **"Inheritance"**
 
 This example demonstrates **Inheritance in Java** using a `Vehicle` superclass and two subclasses: `Car` and `Bike`.
 
