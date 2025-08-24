@@ -172,5 +172,3 @@ These are the basic building blocks of Java.
 Mastering these fundamentals is essential before moving to **OOPS concepts** and advanced Java features.
 
 ---
-
-
